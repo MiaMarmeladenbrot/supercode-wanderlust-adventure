@@ -1,0 +1,426 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans-VariableFont_wdthwght.ttf);
+}
+
+@font-face {
+  font-family: Awesome 5 Regular;
+  src: url(../font/Font\ Awesome\ 5\ Free\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Awesome 5 Solid;
+  src: url(../font/Font\ Awesome\ 5\ Free\ Solid.ttf);
+}
+
+@font-face {
+  font-family: Awesome 5 Brands;
+  src: url(../font/Font\ Awesome\ 5\ Brands.ttf);
+}
+
+/* ! Allgemeine Stylings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  font-family: OpenSans;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  line-height: 2.8rem;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100vw;
+
+  margin: 0 auto;
+}
+
+/* ! Section 1: Header */
+header {
+  background: url(../img/Home.png) center no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+nav {
+  text-align: right;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  margin-bottom: 35vh;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+
+  padding: 1rem 1rem;
+  letter-spacing: 0.6rem;
+
+  margin-bottom: 4vh;
+}
+
+header p {
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+}
+
+.mobile {
+  display: none;
+}
+
+header a {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  background-color: #ed4933;
+  color: white;
+  text-transform: uppercase;
+  padding: 2vh 5vh;
+  margin-top: 1vh;
+  border-radius: 4px;
+}
+
+/* ! Section 2: grüner Kasten */
+.green-block {
+  background-color: #21b2a6;
+  text-align: center;
+  padding: 3vh 3vw;
+}
+
+.green-block h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.191);
+  display: inline-block;
+  padding: 2rem 1rem;
+
+  margin-bottom: 3rem;
+}
+
+.green-block p {
+  color: #c8ece9;
+  margin-bottom: 4vh;
+}
+
+.green-block img {
+  margin: 0 3vw;
+  margin-bottom: 4vh;
+}
+
+/* ! Section 3: Reisebeispiele */
+.beispiele {
+  background-color: #273037;
+}
+
+.beispiele article {
+  display: flex;
+}
+
+.beispiele div {
+  padding: 5rem;
+}
+
+.beispiele img {
+  width: 50rem;
+}
+
+.beispiele h3 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+.beispiel1 {
+  background-color: #2b343d;
+}
+
+.beispiel2 {
+  background-color: #273037;
+  flex-direction: row-reverse;
+}
+
+.beispiel3 {
+  background-color: #242b32;
+}
+
+/* ! Section 4: Our Promises */
+.promises-all {
+  background-color: #505393;
+}
+
+/* ! Heading-Bereich von Promises */
+.promises-heading {
+  text-align: center;
+  padding: 4rem 14rem;
+}
+
+.promises-all h4 {
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  padding-bottom: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.promises-heading p {
+  columns: #d3d4e4;
+  text-align: center;
+}
+
+/* ! Kachelbereich von Promises */
+.promises {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 0 14rem;
+}
+
+.promises div {
+  padding: 8rem 12rem 10rem 12rem;
+}
+
+.promises h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.promises p {
+  color: #d3d4e4;
+}
+
+/* Hintergründe der Kacheln */
+.promises div:nth-of-type(1) {
+  background-color: #4e508e;
+}
+.promises div:nth-of-type(2) {
+  background-color: #4b4d89;
+}
+.promises div:nth-of-type(3) {
+  background-color: #484a83;
+}
+.promises div:nth-of-type(4) {
+  background-color: #45477e;
+}
+.promises div:nth-of-type(5) {
+  background-color: #424479;
+}
+.promises div:nth-of-type(6) {
+  background-color: #404274;
+}
+
+/* ! Section 5: Footer-Kontakt */
+.contact {
+  background: url(../img/footer.png) center no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 6rem 0 11rem 0;
+}
+
+.contact div {
+  width: 50%;
+}
+
+.contact h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  padding: 0 10rem 0 0;
+}
+
+.contact a {
+  padding: 10rem 20rem;
+  font-size: 1.4rem;
+  background-color: #ed4933;
+  color: white;
+  text-transform: uppercase;
+  padding: 1vh 5vh;
+  margin-top: 1vh;
+}
+
+/* ! Footer: Socials */
+.socials {
+  background-color: rgba(29, 36, 42);
+  text-align: center;
+  padding: 6rem;
+}
+
+.socials img {
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.socials p,
+.socials a {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.socials a {
+  text-decoration: underline dotted;
+  /* text-decoration-style: dotted; */
+  letter-spacing: 0.1rem;
+}
+
+/* # Media Queries: Tablet */
+@media only screen and (max-width: 955px) {
+  /* ! Section 3: Reisebeispiele */
+  .beispiele article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beispiele img {
+    width: 100%;
+  }
+
+  .beispiele h3 {
+    display: inline;
+  }
+
+  .beispiele p {
+    margin-top: 4vh;
+  }
+
+  /* ! Section 4: Our Promise */
+  .promises-heading {
+    padding: 4rem 7rem;
+  }
+
+  .promises {
+    text-align: center;
+    padding: 0 7rem 10rem 7rem;
+  }
+
+  .promises div {
+    padding: 5rem 2.5rem;
+  }
+
+  /* ! Section 5: Footer-Kontakt */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 6rem 2rem 9rem 2rem;
+  }
+
+  .contact div {
+    width: 100%;
+
+    margin-bottom: 2rem;
+  }
+
+  .contact p {
+    padding: 0;
+  }
+}
+
+/* # Media Queries: Mobile */
+@media only screen and (max-width: 488px) {
+  /* ! Section 1: Header */
+  nav {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  header div {
+    padding-top: 22vh;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+    margin: 0 15vw 3vh 15vw;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  header p:nth-of-type(3) {
+    margin-bottom: 5vh;
+  }
+
+  header a {
+    width: 80vw;
+    font-size: 1.1rem;
+  }
+
+  /* ! Section 2: grüner Kasten */
+  .green-block h2 {
+    font-size: 1.6rem;
+    /* padding: 3vh 4vw; */
+  }
+
+  .green-block img {
+    width: 20%;
+  }
+
+  /* ! Section 3: Reisebeispiele */
+  .beispiele h3 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  /* ! Section 4: Our Promise */
+  .promises {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
