@@ -35,15 +35,28 @@ h1 {
   font-size: 2.8rem;
   line-height: 5.3rem;
   letter-spacing: 0.6rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 2.3rem;
   line-height: 5rem;
   letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 
 h5 {
+  font-size: 1.9rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
 }
 
 img {
@@ -54,11 +67,15 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-size: 1.7rem;
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-  line-height: 2.8rem;
+.button {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  background-color: #ed4933;
+  color: white;
+  text-transform: uppercase;
+  padding: 2vh 5vh;
+  margin-top: 1vh;
+  border-radius: 4px;
 }
 
 .wrapper {
@@ -72,7 +89,6 @@ p {
 header {
   background: url(../img/Home.png) center no-repeat;
   background-size: cover;
-
   height: 100vh;
 }
 
@@ -88,15 +104,12 @@ header div {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
 header h1 {
-  text-transform: uppercase;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-
   padding: 1rem 1rem;
   margin-bottom: 4vh;
 }
@@ -110,17 +123,6 @@ header p {
   display: none;
 }
 
-header a {
-  font-size: 1.4rem;
-  letter-spacing: 0.3rem;
-  background-color: #ed4933;
-  color: white;
-  text-transform: uppercase;
-  padding: 2vh 5vh;
-  margin-top: 1vh;
-  border-radius: 4px;
-}
-
 /* ! Section 2: grüner Kasten */
 .green-block {
   background-color: #21b2a6;
@@ -129,12 +131,10 @@ header a {
 }
 
 .green-block h2 {
-  text-transform: uppercase;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.191);
   display: inline-block;
+  /* damit der border-bottom nur bis zum  Rand des Textes geht */
   padding: 2rem 1rem;
-
   margin-bottom: 3rem;
 }
 
@@ -163,13 +163,7 @@ header a {
 
 .beispiele img {
   width: 50rem;
-}
-
-.beispiele h3 {
-  text-transform: uppercase;
-  font-size: 2.3rem;
-  line-height: 4rem;
-  letter-spacing: 0.5rem;
+  object-fit: cover;
 }
 
 .beispiel1 {
@@ -196,15 +190,11 @@ header a {
   padding: 4rem 14rem;
 }
 
-.promises-heading h4 {
-  font-size: 2.3rem;
-  text-align: center;
-  text-transform: uppercase;
-
-  display: inline-block;
-
+.promises-heading h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.18);
   padding-bottom: 2rem;
+  display: inline-block;
+  /* damit der border-bottom nur bis zum  Rand des Textes geht */
 
   margin-bottom: 2rem;
 }
@@ -219,7 +209,7 @@ header a {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  padding: 0 14rem;
+  padding: 0 14rem 10rem 14rem;
 }
 
 .promises div {
@@ -227,9 +217,6 @@ header a {
 }
 
 .promises h5 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
   margin-bottom: 2rem;
 }
 
@@ -237,7 +224,7 @@ header a {
   color: #d3d4e4;
 }
 
-/* Hintergründe der Kacheln */
+/* Hintergründe der einzelnen Kacheln */
 .promises div:nth-of-type(1) {
   background-color: #4e508e;
 }
@@ -273,26 +260,12 @@ header a {
   width: 50%;
 }
 
-.contact h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
+.contact h2 {
   margin-bottom: 2rem;
 }
 
 .contact p {
   padding: 0 10rem 0 0;
-}
-
-.contact a {
-  font-size: 1.4rem;
-  letter-spacing: 0.2rem;
-  background-color: #ed4933;
-  color: white;
-  text-transform: uppercase;
-  padding: 1vh 5vh;
-  margin-top: 1vh;
-  padding: 2vh 5vh;
 }
 
 /* ! Footer: Socials */
@@ -312,11 +285,11 @@ header a {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
 }
 
 .socials a {
   text-decoration: underline dotted;
-  letter-spacing: 0.1rem;
 }
 
 /* # Media Queries: Tablet */
@@ -331,7 +304,7 @@ header a {
     width: 100%;
   }
 
-  .beispiele h3 {
+  .beispiele h2 {
     display: inline;
   }
 
@@ -346,7 +319,7 @@ header a {
 
   .promises {
     text-align: center;
-    padding: 0 7rem 10rem 7rem;
+    padding: 0 7rem 7rem 7rem;
   }
 
   .promises div {
@@ -361,12 +334,11 @@ header a {
 
     text-align: center;
 
-    padding: 6rem 2rem 5rem 2rem;
+    padding: 6rem 3rem 5rem 3rem;
   }
 
   .contact div {
     width: 100%;
-
     margin-bottom: 2rem;
   }
 
@@ -377,10 +349,16 @@ header a {
 
 /* # Media Queries: Mobile */
 @media only screen and (max-width: 488px) {
+  .button {
+    width: 80vw;
+    font-size: 1.1rem;
+  }
+
   /* ! Section 1: Header */
   nav {
     display: none;
   }
+
   .mobile {
     display: block;
   }
@@ -395,6 +373,7 @@ header a {
 
   header h1 {
     font-size: 1.7rem;
+    line-height: 3rem;
     margin: 0 15vw 3vh 15vw;
   }
 
@@ -407,15 +386,10 @@ header a {
     margin-bottom: 5vh;
   }
 
-  header a {
-    width: 80vw;
-    font-size: 1.1rem;
-  }
-
   /* ! Section 2: grüner Kasten */
   .green-block h2 {
     font-size: 1.6rem;
-    /* padding: 3vh 4vw; */
+    line-height: 2.6rem;
   }
 
   .green-block img {
@@ -423,7 +397,7 @@ header a {
   }
 
   /* ! Section 3: Reisebeispiele */
-  .beispiele h3 {
+  .beispiele h2 {
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
@@ -437,7 +411,7 @@ header a {
     padding: 4rem 5rem;
   }
 
-  .promises-heading h4 {
+  .promises-heading h2 {
     font-size: 1.6rem;
   }
 
@@ -469,16 +443,13 @@ header a {
   }
 
   /* ! Section 5: Footer-Kontakt */
-  .contact h4 {
+  .contact h2 {
     font-size: 1.6rem;
   }
+
   .contact p {
     font-size: 1.4rem;
     line-height: 2.4rem;
-  }
-  .contact a {
-    width: 80vw;
-    font-size: 1.1rem;
   }
 
   /* ! Section 5: Footer-Socials */
